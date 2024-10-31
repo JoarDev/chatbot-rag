@@ -1,2 +1,6 @@
 streamlit
-openai
+llama-index
+nltk
+llama-index-llms-gemini
+google-generativeai
+llama-index-embeddings-gemini
