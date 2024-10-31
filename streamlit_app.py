@@ -5,15 +5,15 @@ from llama_index.embeddings.gemini import GeminiEmbedding
 
 gemini_api_key = st.secrets["LLM_API_KEY"]
 
-st.set_page_config(page_title="Chat with the Streamlit docs, powered by LlamaIndex", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
-st.title("Chatbot responde tus dudas del reglamento de trabajo final de la FI UNJu")
-st.info("La informacion del chatbot se basa en el [PDF del reglamento de trabajo final](https://www.fi.unju.edu.ar/proyectos-finales.html)", icon="📃")
+st.set_page_config(page_title="Chatbot FI UNJu", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.title("Chatbot responde tus dudas del reglamento de tesis de la FI UNJu")
+st.info("Hecho por Joaquin Ramos. La informacion del chatbot proviene del [PDF del reglamento de tesis](https://www.fi.unju.edu.ar/proyectos-finales.html)", icon="📃")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
         {
             "role": "assistant",
-            "content": "Preguntame sobre el reglamento de trabajo final de la FI UNJu",
+            "content": "Preguntame sobre el reglamento de tesis de la FI UNJu",
         }
     ]
 
